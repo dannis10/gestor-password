@@ -2,6 +2,9 @@
 #    Añadir contraseñas a un archivo.
 #    Listar contraseñas almacenadas.
 #    Salir del programa.
+def add_password(password):
+    with open("passwords.txt", "a") as file:
+        file.write(password + "\n")
 def main():
     while True:
         print("\n--- Menú ---")
