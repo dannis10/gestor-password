@@ -5,6 +5,12 @@
 def add_password(password):
     with open("passwords.txt", "a") as file:
         file.write(password + "\n")
+
+def list_passwords():
+    with open("passwords.txt", "r") as file:
+        passwords = file.readlines()
+    return passwords
+
 def main():
     while True:
         print("\n--- Menú ---")
